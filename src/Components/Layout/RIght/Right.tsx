@@ -26,14 +26,6 @@ function Right() {
     setIsCentigrade(!isCentigrade)
   }
 
-  const arrRender = (index: number) => {
-    let number = 1;
-    const fakeArr = new Array(index).fill(number=+number).map(i => (
-      <Skeleton key={i}></Skeleton>
-    ))
-    return fakeArr
-  }
-
   return (
     <div className={styles.container}>
       <Input id="centigrade" type="radio" checked={isCentigrade} onChange={changedHandler} hidden />
@@ -47,7 +39,7 @@ function Right() {
       </div>
       <div className={styles.forecastContainer}>
       {
-        loading ? arrRender(7) : (
+        loading ? null: (
           <>{
             forecastData?.map((item :any , i: number) => (
               <Card key={i}>
@@ -68,7 +60,7 @@ function Right() {
       </div>
       <h3 className={styles.hightlightText}>Today Hightlight</h3>
       <div className={styles.hightLightContainer}>
-        {loading ? arrRender(4) : (
+        {loading ? null: (
           <>
             <Card>
             <div className={styles.innerContainer}>
