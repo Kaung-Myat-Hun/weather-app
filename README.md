@@ -38,49 +38,49 @@
 
 ### Installation
 <p>1. Clone the repository</p>
-```base
+<code>
   git clone https://github.com/Kaung-Myat-Hun/weather-app.git
-```
+<code>
 <p>2. Navigate to the project directory.</p>
-```bash cd weather-app ```
+<code>cd weather-app</code>
 <p>3. Install Dependencies</p>
-```bash
+  <code>
     npm install
     yarn install
-```
+  </code>
 
 ### Environment Setup
 <ol>
   <li>Create a ```.env``` file in the root directory.</li>
   <li>Add the following environment variables:</li>
 </ol>
-```base
-  VITE_API_KEY=Your weather.com API Key
-```
+  <code>
+    VITE_API_KEY=Your weather.com API Key
+  </code>
 
 ### Running The Application
 <ol>
   <li>Start Development server</li>
-  ```bash 
+  <code>
     npm run dev
     # or 
     yarn dev
-  ```
+  </code>
   <li>Open <a href="http://localhost:5173">http://localhost:5173</a>in your browser.</li>
 </ol>
 
 ### Building production
 <ol>
   <li>Build the application</li>
-  `bash 
+  <code>
     npm run build
     # or 
     yarn build
-  `
+  </code>
   <li>Serve the production build locally</li>
-  `bash 
+  <code>
     npm run preview
     # or 
     yarn preview
-  `
+  </code>
 </ol>
