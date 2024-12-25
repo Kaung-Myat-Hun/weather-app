@@ -28,8 +28,8 @@ function Right() {
 
   const arrRender = (index: number) => {
     let number = 1;
-    const fakeArr = new Array(index).map( i => (
-      <Skeleton key={number+index}></Skeleton>
+    const fakeArr = new Array(index).fill(number=+number).map(i => (
+      <Skeleton key={i}></Skeleton>
     ))
     return fakeArr
   }
