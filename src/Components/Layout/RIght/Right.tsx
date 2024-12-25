@@ -11,7 +11,7 @@ function Right() {
 
   const [forecastData, setForecastData] = useState([])
   
-  const [todayData, setTodayData] = useState<any>(null)
+  const [todayData, setTodayData] = useState<any>()
 
   const {weatherSec, loading} : any = useContext(WeatherContext)
 
