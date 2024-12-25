@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: gray;
+    border-radius: 10px;
+    background: linear-gradient(221deg, #5e5e5e, #d4d4d4);
+    background-size: 400% 400%;
+
+    -webkit-animation: skeleton 4s ease infinite;
+    -moz-animation: skeleton 4s ease infinite;
+    animation: skeleton 4s ease infinite;
+}
+
+@-webkit-keyframes skeleton {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+@-moz-keyframes skeleton {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+@keyframes skeleton {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100px;
+        max-width: 100%;
+    }
+}

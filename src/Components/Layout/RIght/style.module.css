@@ -1,0 +1,281 @@
+.container{
+    padding: 25px;
+    margin: auto;
+    min-height: 100vh;
+    width: 100%;
+}
+.forecastContainer{
+    display: grid;
+    gap: 15px;
+    margin-top: 2rem;
+    grid-template-columns: repeat(7 , 1fr);
+}
+.icon{
+    width: 7rem;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+.active{
+    background-color: blue;
+    color: var(--bg-white);
+}
+.labelButton{
+    background-color: var(--bg-white);
+    color: var(--dark-text-color);
+}
+.active, .labelButton{
+    width: 25px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dark-bg-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.labelContainer{
+    display: flex;
+    gap: 6px;
+    float: inline-end;
+}
+.tempText{
+    margin: auto;
+    text-align: center;
+}
+.dayText{
+    text-align: center;
+    display: block;
+}
+.hightLightContainer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+.hightlightText{
+    margin-top: 30px;
+}
+.progressContainer{
+    width: 140px;
+    aspect-ratio: 1/1;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+}
+.hightLightImage{
+    width: 160px;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+.title{
+    position: absolute;
+    left: 6%;
+    top: 2%;
+}
+.innerContainer{
+    position: relative;
+    width: 215px;
+    aspect-ratio: 1/1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.directionText{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.windIcon{
+    width: 50px;
+    position: absolute;
+    left: 6%;
+    top: 45%;
+}
+.normalText{
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+}
+.cardInnerContainer{
+    min-width: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px){
+    .forecastContainer{
+        margin: 2rem auto 0;
+        width: 91vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .cardInnerContainer{
+        min-width: 100px;
+        max-width: 100px;
+    }
+    .container{
+        min-height: auto;
+    }
+    .hightLightContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .innerContainer{
+        width: 100px;
+        height: 200px;
+    }
+    .normalText{
+        bottom: 1%;
+        left: -15%
+    }
+    .progressContainer{
+        width: 90px;
+    }
+    .hightLightImage{
+        width: 100px;
+        left: 0;
+    }
+    .windIcon{
+        width: 30px;
+        top: 33%;
+    }
+    .directionText{
+        width: 147%;
+    }
+    .directionTextH4{
+        font-size: 0.8rem;
+    }
+    .dayText{
+        font-size: 0.8rem;
+    }
+    .icon{
+        width: 50%;
+    }
+    .tempText{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .forecastContainer{
+        margin: 2rem auto 0;
+        width: 91vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .cardInnerContainer{
+        min-width: 100px;
+        max-width: 100px;
+    }
+    .container{
+        min-height: auto;
+    }
+    .hightLightContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .innerContainer{
+        width: 100px;
+        height: 200px;
+    }
+    .normalText{
+        bottom: 1%;
+        left: -91%;
+    }
+    .progressContainer{
+        width: 100px;
+    }
+    .hightLightImage{
+        width: 100px;
+        left: 0;
+    }
+    .windIcon{
+        width: 30px;
+        top: 33%;
+    }
+    .directionText{
+        width: 178%;
+    }
+    .directionTextH4{
+        font-size: 1rem;
+    }
+    .dayText{
+        font-size: 0.9rem;
+    }
+    .icon{
+        width: 50%;
+    }
+    .tempText{
+        font-size: 0.8rem;
+    }
+}
+@media ( min-width: 1025px) and ( max-width: 1400px){
+    .forecastContainer{
+        margin: 2rem auto 0;
+        width: 60vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .cardInnerContainer{
+        min-width: 100px;
+        max-width: 100px;
+    }
+    .container{
+        min-height: auto;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+    .hightLightContainer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .innerContainer{
+        width: 100px;
+        height: 200px;
+    }
+    .normalText{
+        bottom: 1%;
+        left: -91%;
+    }
+    .progressContainer{
+        width: 100px;
+    }
+    .hightLightImage{
+        width: 100px;
+        left: 0;
+    }
+    .windIcon{
+        width: 30px;
+        top: 33%;
+    }
+    .directionText{
+        width: 178%;
+    }
+    .directionTextH4{
+        font-size: 1rem;
+    }
+    .dayText{
+        font-size: 0.9rem;
+    }
+    .icon{
+        width: 50%;
+    }
+    .tempText{
+        font-size: 0.8rem;
+    }
+}

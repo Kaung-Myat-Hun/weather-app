@@ -1,0 +1,102 @@
+.container{
+    background-color: var(--bg-white);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    width: 22rem;
+}
+.search{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light-bg-color);
+    width: 20rem;
+    margin-top: 20px;
+}
+.search:focus{
+    outline: none;
+}
+.iconContainer{
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+.icon{
+    width: 100%;
+}
+.tempText{
+    font-size: 1.9rem;
+}
+.textContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dateText{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.timeText{
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+.locationContainer{
+    padding: 15px;
+}
+.regionText{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.countryText{
+    font-weight: 500;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+.cardContainer{
+    position: absolute;
+    bottom: 6%;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .topContainer{
+        width: 100vw;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .iconContainer{
+        width: 5rem;
+    }
+    .container{
+        height: 38vh;
+        width: 100vw;
+    }
+    .search{
+        width: 90%;
+    }
+    .icon{
+        width: 175%;
+    }
+}
+
+@media (max-width: 767px) {
+    .topContainer{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .iconContainer{
+        width: 5rem;
+    }
+    .container{
+        height: 42vh;
+        width: 100vw;
+    }
+}

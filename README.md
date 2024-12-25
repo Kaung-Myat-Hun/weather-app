@@ -1,50 +1,86 @@
-# React + TypeScript + Vite
+## Weather Application Documentation ( React With Typescript )
+-----------------------------------------------
+### Project Overview
+<p>The weather application provides user real-time weather updates and forecast for locations worldwide.</p>
+<br>
+<p>This application is using modern web technologies to ensure a seamless and efficient user experience.</p>
+<p>Resposive ui design at phone , tablet and laptop PC.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features 
+<ul>
+  <li>Search for weather by city and location</li>
+  <li>Display current weather, (temperature , humidity , wind speed and wind direction etc)</li>
+  <li>Show a 7 days weather forecast</li>
+  <li>Interactive and responseive UI.</li>
+  <li>Get gelocation from your local machine for automatic weather updates</li>
+</ul>
 
-Currently, two official plugins are available:
+### Tech Stack
+<ul>
+  <li>Frontend : React with Typescript</li>
+  <li>State management : Context API</li>
+  <li>Styling : Css</li>
+  <li>API Integration : <a href="https://api.weatherapi.com">https://api.weatherapi.com</a> </li>
+  <li>Build Tool : Vite</li>
+  <li>Version Control : Git </li>
+  <li>Deployment : Vercel</li>
+</ul>
+<hr>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Developer Guide
+### Prerequisites
+<p>Ensure the following tools are installed to your system</p>
+<ul>
+  <li>Node JS ( => 16.x )</li>
+  <li>npm or yarn</li>
+  <li>git</li>
+</ul>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+<p>1. Clone the repository</p>
+```base
+  git clone https://github.com/Kaung-Myat-Hun/weather-app.git
+```
+<p>2. Navigate to the project directory.</p>
+```bash cd weather-app ```
+<p>3. Install Dependencies</p>
+```bash
+    npm install
+    yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Environment Setup
+<ol>
+  <li>Create a ```.env``` file in the root directory.</li>
+  <li>Add the following environment variables:</li>
+</ol>
+```base
+  VITE_API_KEY=Your weather.com API Key
 ```
+
+### Running The Application
+<ol>
+  <li>Start Development server</li>
+  ```bash 
+    npm run dev
+    # or 
+    yarn dev
+  ```
+  <li>Open <a href="http://localhost:5173">http://localhost:5173</a>in your browser.</li>
+</ol>
+
+### Building production
+<ol>
+  <li>Build the application</li>
+  ```bash 
+    npm run build
+    # or 
+    yarn build
+  ```
+  <li>Serve the production build locally</li>
+  ```bash 
+    npm run preview
+    # or 
+    yarn preview
+  ```
+</ol>

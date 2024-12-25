@@ -1,34 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { Layout } from './Components';
+import { createContext, useEffect, useState } from 'react';
+
+export const LocationContext = createContext("");
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // get geo location data from your machine and store at the state and make context api
+  const [locationData, setLocationData] = useState("")
+
+  useEffect(() => {
+    position();
+  }, [locationData])
+
+  const position = async () => {
+    await navigator.geolocation.getCurrentPosition(
+      position => setLocationData(
+        position.coords.latitude + "," +
+        position.coords.longitude
+      ), 
+      err => console.log(err)
+    );
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <LocationContext.Provider value={locationData}>
+      <Layout />
+    </LocationContext.Provider>
   )
 }
 
