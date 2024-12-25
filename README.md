@@ -51,12 +51,12 @@
 
 ### Environment Setup
 <ol>
-  <li>Create a ```.env``` file in the root directory.</li>
+  <li>Create a <code>.env</code> file in the root directory.</li>
   <li>Add the following environment variables:</li>
 </ol>
-  <code>
+  ```bash
     VITE_API_KEY=Your weather.com API Key
-  </code>
+  ```
 
 ### Running The Application
 <ol>
