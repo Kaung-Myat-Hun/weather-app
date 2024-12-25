@@ -40,8 +40,8 @@ function Right() {
       <div className={styles.forecastContainer}>
       {
         loading ? (
-          Array(7).fill(0).map((item , index) => (
-            <Skeleton key={index}></Skeleton>
+          Array(7).fill(0).map((item) => (
+            <Skeleton key={item}></Skeleton>
           ))
         ) : (
           <>{
@@ -65,7 +65,7 @@ function Right() {
       <h3 className={styles.hightlightText}>Today Hightlight</h3>
       <div className={styles.hightLightContainer}>
         {loading ? (
-          Array(4).fill(0).map((item , index) => <Skeleton key={index}></Skeleton>)
+          Array(4).fill(0).map((item) => <Skeleton key={item}></Skeleton>)
         ) : (
           <>
             <Card>

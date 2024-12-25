@@ -1,6 +1,6 @@
 import { Input } from '../../Input'
 import styles from './style.module.css'
-import { useState, useContext, useEffect , useCallback } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { WeatherContext , CFContext } from '..'
 import { Card, Skeleton } from '../..'
 
