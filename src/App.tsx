@@ -14,7 +14,7 @@ function App() {
   }, [locationData])
 
   const position = async () => {
-    await navigator.geolocation.getCurrentPosition(
+    await window.navigator.geolocation.getCurrentPosition(
       position => setLocationData(
         position.coords.latitude + "," +
         position.coords.longitude
