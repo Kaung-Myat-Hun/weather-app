@@ -143,17 +143,16 @@ cd weather-app
   <li>
     Build Error :
     <ul>
-      <li>Delete <code>node_modules</code> directory and reinstall dependencies : </li>
+      <li>Delete <code>node_modules</code> directory and reinstall dependencies :</li>
     </ul>
-    
-      ```bash
+    <code>
         rm -rf node_modules
         npm install 
         # or
         yarn install
-      ```
+      </code>
   </li>
-
+    
   <li>
     Deployment Issue :
       <ul>
