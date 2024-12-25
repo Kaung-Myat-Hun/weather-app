@@ -52,6 +52,7 @@ cd weather-app
 
   ```bash
     npm install
+    # or
     yarn install
   ```
 
@@ -95,4 +96,68 @@ cd weather-app
     # or 
     yarn preview
   ```
+</ol>
+
+## Delivery Documentation
+### Deployment 
+<p>The application is deployed on Vercel. To access the live application, visit</p>
+<a href="">Link</a>
+
+### Deployment Steps
+<ol>
+  <li>Git push changes to <code>main</code> branch</li>
+  <li>Vercel will automatically trigger a deployment.</li>
+  <li>Monitor deployment status on the Vercel dashboard.</li>
+</ol>
+
+### API Integration
+<p>
+  The application integration with weatherapi.com for fetching weather information data. Ensure the API Key is activated.
+</p>
+
+#### Key Endpoints
+<ul>
+  <li>Current Weather Data:</li>
+
+  ```bash
+      GET http://api.weatherapi.com/v1/current.json?key=${key}&q=${locationString}&aqi=yes
+      # locationString is city name or latitude,longitude will be passed as parameter
+  ```
+
+  <li>7 Days Forecast:</li>
+
+  ```bash
+    GET http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${locationString}&days=7&aqi=yes&alerts=no
+    # locationString is city name or latitude,longitude will be passed as parameter
+  ```
+</ul>
+
+### Troubleshooting
+<ol>
+  <li> API Error : 
+    <ul>
+      <li>Verify API key in the <code>.env</code></li>
+      <li>Check the weatherapi.com api status</li>
+    </ul>
+  </li>
+  <li>
+    Build Error :
+    <ul>
+      <li>Delete <code>node_modules</code> directory and reinstall dependencies:</li>
+
+      ```bash
+        rm -rf node_modules
+        npm install 
+        # or
+        yarn install
+      ```
+    </ul>
+  </li>
+
+  <li>
+    Deployment Issue :
+      <ul>
+        <li>Verify environment variables in the Vercel dashboard.</li>
+      </ul>
+  </li>
 </ol>
