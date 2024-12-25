@@ -72,15 +72,15 @@
 ### Building production
 <ol>
   <li>Build the application</li>
-  ```bash 
+  `bash 
     npm run build
     # or 
     yarn build
-  ```
+  `
   <li>Serve the production build locally</li>
-  ```bash 
+  `bash 
     npm run preview
     # or 
     yarn preview
-  ```
+  `
 </ol>
