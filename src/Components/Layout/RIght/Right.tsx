@@ -1,6 +1,6 @@
 import styles from './style.module.css'
 import { useContext, useEffect, useState } from 'react'
-import { Card, CFContext, Skeleton, WeatherContext } from '../..'
+import { Card, CFContext, WeatherContext } from '../..'
 import { Input } from '../../Input'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
