@@ -23,7 +23,7 @@ function Left() {
         <div className={styles.topContainer}>
           <div className={styles.iconContainer}>
             {loading ? (
-              <Skeleton></Skeleton>
+              <Skeleton id="skeleton"></Skeleton>
             ) : <img src={imageSrc} alt="" className={styles.icon} />}
           </div>
           <div>

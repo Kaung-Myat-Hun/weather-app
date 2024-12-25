@@ -1,7 +1,8 @@
 import styles from './style.module.css'
 
-export const Skeleton = () => {
+
+export const Skeleton = (props : any ) => {
   return (
-    <div className={styles.container}></div>
+    <div {...props} className={styles.container}></div>
   )
 }
