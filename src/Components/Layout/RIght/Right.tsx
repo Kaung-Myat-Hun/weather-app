@@ -98,10 +98,10 @@ function Right() {
                   <h4 className={styles.directionTextH4}>Direction : {todayData?.wind_dir} </h4><small>{todayData?.wind_degree}&deg;</small>
                 </div>
                 <div className={styles.directionText}>
-                  <h4 className={styles.directionTextH4}>Direction : {todayData?.wind_kph} </h4><small>K/h</small>
+                  <h4 className={styles.directionTextH4}>Speed : {todayData?.wind_kph} </h4><small>K/h</small>
                 </div>
                 <div className={styles.directionText}>
-                  <h4 className={styles.directionTextH4}>Direction : {todayData?.wind_mph} </h4><small>M/h</small>
+                  <h4 className={styles.directionTextH4}>Speed : {todayData?.wind_mph} </h4><small>M/h</small>
                 </div>
             </div>
           </Card>
