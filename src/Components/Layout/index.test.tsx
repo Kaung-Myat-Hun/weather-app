@@ -27,7 +27,7 @@ describe("Layout service", () => {
     })
     it("Context Provider", () => {
         mockedGetApiCall.mockResolvedValueOnce({
-            data: { current: { condition: { icon: "example-icon" } } },
+            data: { current: { condition: { icon: "icon" } } },
           });
           mockedGetWeatherForecast.mockResolvedValueOnce({
             data: { forecast: "example-forecast" },
@@ -41,7 +41,7 @@ describe("Layout service", () => {
     })
     it("Fetches weather api" ,async () =>{
         mockedGetApiCall.mockResolvedValueOnce({
-            data: { current: { condition: { icon: "example-icon" } } },
+            data: { current: { condition: { icon: "icon" } } },
           });
           mockedGetWeatherForecast.mockResolvedValueOnce({
             data: { forecast: "example-forecast" },
