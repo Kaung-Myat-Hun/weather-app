@@ -98,6 +98,17 @@ cd weather-app
   ```
 </ol>
 
+### Testing 
+<ol>
+  <li>Testing with vitest run the command in terminal</li>
+
+ ```bash
+    npm run test
+    # or 
+    yarn test
+  ```
+</ol>
+
 ## Delivery Documentation
 ### Deployment 
 <p>The application is deployed on Vercel. To access the live application, visit</p>
