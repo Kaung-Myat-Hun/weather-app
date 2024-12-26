@@ -112,7 +112,7 @@ cd weather-app
 ## Delivery Documentation
 ### Deployment 
 <p>The application is deployed on Vercel. To access the live application, visit</p>
-<a href="">Link</a>
+<a href="https://weather-app-six-iota-64.vercel.app/">Link</a>
 
 ### Deployment Steps
 <ol>
