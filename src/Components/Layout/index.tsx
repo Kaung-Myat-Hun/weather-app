@@ -43,8 +43,8 @@ export const Layout = () => {
       ])
       setLoading(false)
       setImageSrc(first?.data?.current?.condition?.icon || "")
-      setWeather(first.data)
-      setWeatherSec(second.data)
+      setWeather(first?.data)
+      setWeatherSec(second?.data)
     }, 500), [])
 
     const searchCity = (e:any) => {

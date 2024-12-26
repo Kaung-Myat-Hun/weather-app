@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const debounceFunc = (callback : (...args:any) => void  , delay : number) => {
-    let time : number = 0;
+    let time :any;
     return (...args : any) =>{
         clearTimeout(time);
         time = setTimeout(() => {
