@@ -4,7 +4,7 @@ import { fireEvent , waitFor } from '@testing-library/react'
 import { LocationContext } from '../../App'
 import { Layout } from '..'
 import { getApiCall, getWeatherForecast } from '../../utils/service'
-import { vi, it , describe , expect, beforeEach } from 'vitest'
+import { vi, it , describe , expect, beforeEach, Mock } from 'vitest'
 
 test("layout", () => {
     render(<Layout />)
@@ -17,8 +17,8 @@ vi.mock('../../utils/service', () => ({
     debounceFunc:  vi.fn((fn) => fn),
 }))
 
-const mockedGetApiCall = getApiCall as jest.Mock;
-const mockedGetWeatherForecast = getWeatherForecast as jest.Mock;
+const mockedGetApiCall = getApiCall as Mock;
+const mockedGetWeatherForecast = getWeatherForecast as Mock;//
 
 describe("Layout service", () => {
     const mockLocation = "mandalay";
