@@ -65,12 +65,8 @@ export const Layout = () => {
 
   // use context api to control the data passing through the components
   return (
-    <WeatherContext.Provider value={{
-      weather, searchCity, city , weatherSec, loading , imageSrc
-    }}>
-      <CFContext.Provider value={{
-        isCentigrade, setIsCentigrade
-      }}>
+    <WeatherContext.Provider value={{weather, searchCity, city , weatherSec, loading , imageSrc}}>
+      <CFContext.Provider value={{isCentigrade, setIsCentigrade}}>
           <div className={styles.container}>
             <Left />
             <Right />
