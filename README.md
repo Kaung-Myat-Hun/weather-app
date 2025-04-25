@@ -156,12 +156,13 @@ cd weather-app
     <ul>
       <li>Delete <code>node_modules</code> directory and reinstall dependencies :</li>
     </ul>
-    <code>
+    
+    ```bash
         rm -rf node_modules
         npm install 
         # or
         yarn install
-      </code>
+      ```
   </li>
     
   <li>
